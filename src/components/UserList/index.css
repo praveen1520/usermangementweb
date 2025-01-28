@@ -1,0 +1,127 @@
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Add Button Styling */
+.add-btn {
+    display: block;
+    margin: 0 auto 20px;
+    background: linear-gradient(45deg, #007bff, #4a90e2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #3b83da);
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table thead {
+    background: linear-gradient(45deg, #007bff, #4a90e2);
+    color: white;
+    font-weight: bold;
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.responsive-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.responsive-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.responsive-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Button Styling */
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.update-btn {
+    background: linear-gradient(45deg, #28a745, #81c784);
+    color: white;
+}
+
+.update-btn:hover {
+    background: linear-gradient(45deg, #218838, #66bb6a);
+}
+
+.delete-btn {
+    background: linear-gradient(45deg, #dc3545, #e57373);
+    color: white;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(45deg, #c82333, #ef5350);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .responsive-table th,
+    .responsive-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
